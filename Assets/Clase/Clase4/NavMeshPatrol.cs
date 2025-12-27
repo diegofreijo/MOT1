@@ -1,9 +1,8 @@
 using UnityEngine;
 using UnityEngine.AI;
-using UnityEngine.InputSystem;
 
 [RequireComponent(typeof(NavMeshAgent))]
-public class NavMeshNavigationInputSystem : MonoBehaviour
+public class NavMeshPatrol : MonoBehaviour
 {
     /* ------------------------------------------------------------------ */
     /* 1️⃣ Agent configuration                                           */
@@ -81,8 +80,7 @@ public class NavMeshNavigationInputSystem : MonoBehaviour
     /* ------------------------------------------------------------------ */
     private void HandlePatrolLogic()
     {
-
-        Debug.Log($"{_agent.remainingDistance} <= {_agent.stoppingDistance}");
+        // Debug.Log($"{_agent.remainingDistance} <= {_agent.stoppingDistance}");
 
         // If we are almost at the current point, start waiting
         if (_agent.remainingDistance <= _agent.stoppingDistance)
