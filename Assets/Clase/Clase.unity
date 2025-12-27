@@ -940,6 +940,18 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -5.620035
       objectReference: {fileID: 0}
+    - target: {fileID: 3203261902030645159, guid: c708a3b79cd542b42bbfedb17e213bc1, type: 3}
+      propertyPath: m_Name
+      value: PlayerFollowCamera
+      objectReference: {fileID: 0}
+    - target: {fileID: 3755393912476555084, guid: c708a3b79cd542b42bbfedb17e213bc1, type: 3}
+      propertyPath: Target.TrackingTarget
+      value: 
+      objectReference: {fileID: 228158355}
+    - target: {fileID: 3755393912476555084, guid: c708a3b79cd542b42bbfedb17e213bc1, type: 3}
+      propertyPath: Target.CustomLookAtTarget
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5542111180780342640, guid: c708a3b79cd542b42bbfedb17e213bc1, type: 3}
       propertyPath: far clip plane
       value: 50000
@@ -964,7 +976,9 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3203261902030644825, guid: c708a3b79cd542b42bbfedb17e213bc1, type: 3}
+    - {fileID: 5219222905236577332, guid: c708a3b79cd542b42bbfedb17e213bc1, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -1751,6 +1765,7 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 2070925441746177913, guid: a1a802ecaf6775746bb2a929fb554ad8, type: 3}
     - {fileID: 8912046325767431529, guid: a1a802ecaf6775746bb2a929fb554ad8, type: 3}
+    - {fileID: 8693994131656602900, guid: a1a802ecaf6775746bb2a929fb554ad8, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
